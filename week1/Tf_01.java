@@ -2,9 +2,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Scanner;
-
-import javax.smartcardio.TerminalFactorySpi;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
@@ -30,6 +27,7 @@ class Tf_01 {
             
             String[] stopWordsArray = sw.nextLine().split(",");
             ArrayList<Term> set = new ArrayList<>();
+            System.out.println("Start filtering...");
             while (tf.hasNextLine()) {
                 String line = tf.nextLine();
                 // split with token other than alphanumeric 
@@ -72,10 +70,12 @@ class Tf_01 {
             });
             
             // write the 25 most frequent words to a file
+            System.out.println("25 most frequent terms:");
             int nMost = 0;
             for (Term t : set){
             	nMost++;
                 myWriter.write(t.title + "  -  " + t.count + "\n");
+                System.out.println(t.title + "  -  " + t.count);
                 if (nMost == 25)
                 	break;
             }
