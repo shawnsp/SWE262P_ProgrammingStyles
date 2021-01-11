@@ -95,6 +95,7 @@ class Tf_01 {
         }
     }
     
+    // run by: java Tf_01 ../pride-and-prejudice.txt
     public static void main(String[] args) {
         File targetFile = new File(args[0]);
     	// File targetFile = new File("../pride-and-prejudice.txt");
