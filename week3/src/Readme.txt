@@ -9,7 +9,12 @@ Thirteen.java - Style #13 Closed Maps
     - Each 'thing' is a map from keys to values. Some values are procedures/functions.
     (output: term_frequency13.txt)
 
-Fifteen.java - 
+Sixteen.java - Style #16 Publish-Subscribe
+    - Larger problem is decomposed into entities using some form of abstraction (objects, modules or similar)
+    - The entities are never called on directly for actions
+    - Existence of an infrastructure for publishing and subscribing to events, aka the bulletin board
+    - Entities post event subscriptions (aka 'wanted') to the bulletin board and publish events (aka 'offered') to the bulletin board. the bulletin board does all the event management and distribution
+    (output: term_frequency16.txt)
 
 Note:
 No need to compile
@@ -33,5 +38,10 @@ Instructions:
 Special Instructions: 
     Thirteen.java is runing 13.2
     if 13.1 is what you are looking for, comment out the code right after //13.2 and uncomment //13.1
-    compile it at week3 folder using: 
-    then go to week3/out/13 amd run: 
+    compile it at week3 folder using: javac -d out/13 src/Thirteen.java
+    then go to week3/out/13 amd run: java Thirteen ../../../pride-and-prejudice.txt
+
+    Sixteen.java is runing 16.2
+    if 16.1 is what you are looking for, comment out the code that indicated with //16.2
+    compile it at week3 folder using: javac -d out/16 src/Sixteen.java
+    then go to week3/out/16 amd run: java Sixteen ../../../pride-and-prejudice.txt
