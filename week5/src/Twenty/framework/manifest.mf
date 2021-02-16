@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Built-By: shawnsp
+Main-Class: Framework
+Main: Main
