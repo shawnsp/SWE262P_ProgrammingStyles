@@ -71,3 +71,11 @@ Twenty:
         1. cd week5/out/deploy
         2. java -jar framework.jar ../../../pride-and-prejudice.txt
         3. system will generate top25 words 
+
+        to run different setting:
+            cd week5/out/deploy/config.properties
+            change to whichever combination you want to test on
+                 e.g: 
+                 Words=Words2 
+                 WordFreqs=WordFreqs2
+                    
