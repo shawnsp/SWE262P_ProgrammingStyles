@@ -89,7 +89,7 @@ public class Five {
     }
 
     // output the 25 most frequent words
-    public static void ouput() {
+    public static void output() {
         System.out.println("Start writing output...25 most frequent terms...");
         try {
             FileWriter myWriter = new FileWriter("./term_frequency5.txt");
@@ -116,6 +116,6 @@ public class Five {
         readFile(targetFile, stopWordsFile);
         filterWord();
         sortWordFreq();
-        ouput();
+        output();
     }
 }
